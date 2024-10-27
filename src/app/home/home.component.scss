@@ -5,18 +5,18 @@
 }
 .contect{
     width: 455px;
-   
-    
+
+
 }
 .img{
   width: 350px;
   height: 350px;
-  background: url("../../../public/assets/0951.jpg_wh1200.jpg") ;
+  background: url("../../../public/assets/maint.jpg") ;
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
-  
+
 }
 
 .img::before,
@@ -42,7 +42,7 @@
 
 
 
- 
+
  .web{
 
   position: absolute;
@@ -53,7 +53,7 @@
   text-align: center;
    background-color:rgb(255, 255, 255);
    color: #312d81;
-   
+
  }
 
  .brand{
@@ -85,11 +85,11 @@
  text-align: center;
   background-color:rgb(255, 255, 255);
   color: #312d81;
-  
+
  }
 
  .web span,.ux span,.brand span,.mobil span {
-  
+
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -123,4 +123,3 @@
 
 
 
-  
