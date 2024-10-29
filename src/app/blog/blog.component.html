@@ -1,40 +1,31 @@
-<div class="container swiper">
-  <div class="text">
-    <h1>My Blog</h1>
-    <h4>Perfect solution for digital experience</h4>
+<section>
+ 
+ <div class="container">
+  <div class="row g-3 " >
+    <div>
+          <h1>My Blog</h1>
+      <h4 class="mb-5">Perfect solution for digital experience:-</h4>
+
+     
+        <div class="col-md-12 ">
+          <owl-carousel-o [options]="customOptions" >
+          
+            <ng-template carouselSlide ><img src="./assets/ph1.png" alt="slider1" class="carousel-Slide"  ></ng-template>  
+            <ng-template carouselSlide><img src="./assets/ph3.png" alt="slider2" class="carousel-Slide"></ng-template>  
+            <ng-template carouselSlide><img src="./assets/ph4.png" alt="slider3" class="carousel-Slide"></ng-template>  
+            <ng-template carouselSlide><img src="./assets/ph2.jpg" alt="slider4" class="carousel-Slide"></ng-template>
+            <ng-template carouselSlide><img src="./assets/ph5.png" alt="slider5" class="carousel-Slide"></ng-template>
+           
+          
+          
+          </owl-carousel-o>
+        </div>
+        
+       
+     
+    
+    </div>
   </div>
-  <div class="card-wrapper">
-    <!-- Card slides container -->
-    <ul class="card-list swiper-wrapper">
-      <li class="card-item swiper-slide">
-        <a href="#" class="card-link">
-          <img src="./assets/ph1.png" alt="Card Image" class="card-image">
-          <h2 class="card-title">Glory E-commerce</h2>
-        </a>
-      </li>
-      <li class="card-item swiper-slide">
-        <a href="#" class="card-link">
-          <img src="./assets/ph3.png" alt="Card Image" class="card-image">
-          <h2 class="card-title">Global Solution Travel Blog</h2>
-        </a>
-      </li>
-      <li class="card-item swiper-slide">
-        <a href="#" class="card-link">
-          <img src="./assets/ph4.png" alt="Card Image" class="card-image">
-          <h2 class="card-title">Palmairass Corp web Site</h2>
-        </a>
-      </li>
-      <li class="card-item swiper-slide">
-        <a href="#" class="card-link">
-          <img src="./assets/ph2.jpg" alt="Card Image" class="card-image">
-          <h2 class="card-title">Hesoyam.Co App</h2>
-        </a>
-      </li>
-    </ul>
-
-
-    <!-- Navigation Buttons -->
-    <div class="swiper-slide-button swiper-button-next"></div>
-  </div>
-</div>
-
+ </div>
+ 
+</section>
