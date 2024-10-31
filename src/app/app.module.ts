@@ -12,8 +12,10 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { footercomponent } from './footer/footer.component';
 import { NotFoundedPageComponent } from './not-founded-page/not-founded-page.component';
-import {BrowserAnimationsModule } from "@angular/platform-browser/animations"
+import {BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
