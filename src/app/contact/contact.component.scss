@@ -1,21 +1,23 @@
 .shap{
-  background:linear-gradient(60deg,#312d81 70%  ,#5648d162 30%  );
+  background:linear-gradient(60deg,#312d81 75%  ,#5648d162 25%  );
   height: 100vh;
   text-align: center;
   color:white;
- 
+
 }
 .shap p{
   font-weight:bolder ;
 }
 
-
-
-
 .box-form{
-  width: 530px;
-  height: 420px;
-  background-color: white;
+  max-width: 100rem;
+  margin: 1rem auto;
+  text-align: right;
+  margin-bottom: 3rem;
+  background-color:#ffffff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 1rem;
 }
 
 .alert{
@@ -23,11 +25,12 @@
   text-align: center;
   color: red;
   font-size:small;
-  
-  
+
+
 }
 textarea{
   resize: none;
 }
+
 
 

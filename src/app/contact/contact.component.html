@@ -7,61 +7,61 @@
     <div class=" d-flex justify-content-center align-items-center mt-4">
 
       <div class="box-form p-5 border rounded" >
-    
+
         <form  [formGroup]="RegisterForm" (ngSubmit)="handleForm() "  >
-  
+
           <div class="d-flex justify-content-around">
             <div >
-      
+
               <input type="text" formControlName="name" class="form-control mb-2" placeholder="Enter Your Name......">
-  
+
               <div class="alert alert-danger alert " *ngIf="RegisterForm.get('name')?.touched && RegisterForm.get('name')?.errors " >
                 <P *ngIf="RegisterForm.get('name')?.getError('required')">Please Fill out This Field</P>
                 <P *ngIf="RegisterForm.get('name')?.getError('minlength')">Name  MinLength 3</P>
                 <P *ngIf="RegisterForm.get('name')?.getError('maxlength')">Name  MaxLength 20</P>
               </div>
-          
+
               <input type="password" formControlName="Password" class="form-control" placeholder="Enter Your Password......">
-        
+
               <div class="alert alert-danger alert" *ngIf="RegisterForm.get('Password')?.touched && RegisterForm.get('Password')?.errors" >
-            
+
                 <P *ngIf="RegisterForm.get('Password')?.getError('required')">password is required</P>
                 <p *ngIf="RegisterForm.get('Password')?.getError('pattern')">password must be at least 6 chars</p>
             </div>
-          
+
             </div>
-  
+
             <div>
-  
-  
+
+
               <input type="email" formControlName="Email" class="form-control mb-2" placeholder="Enter Your Email......">
-        
+
               <div class="alert alert-danger " *ngIf="RegisterForm.get('Email')?.touched && RegisterForm.get('Email')?.errors" >
-            
+
                 <P *ngIf="RegisterForm.get('Email')?.getError('required')">Email is required</P>
                 <p *ngIf="RegisterForm.get('Email')?.getError('email')">Your email must include an '&#64;'</p>
             </div>
-      
+
             <input type="text" formControlName="Subject" class="form-control mb-2" placeholder="Subject">
-  
-  
+
+
             </div>
 
           </div>
-          
+
 
 
 
       <textarea type="text" formControlName="YourMessage" class="form-control mb-4" placeholder="Your Message"></textarea>
          <button [disabled]="RegisterForm.invalid" type="submit"  class="btn btn-success">Submit</button>
-      
-      
+
+
       </form>
-    
+
       </div>
-    
-    
-    
+
+
+
     </div>
 
 
